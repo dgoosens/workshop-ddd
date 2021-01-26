@@ -1,6 +1,7 @@
 api_platform:
     mapping:
-        paths: []
+        paths:
+            - '%bounded_context_root_path%/App/Api/Resource'
     patch_formats:
         json: ['application/merge-patch+json']
     swagger:
