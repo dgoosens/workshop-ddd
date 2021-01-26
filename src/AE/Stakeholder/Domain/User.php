@@ -3,7 +3,7 @@
  * Created by dgoosens on 26/01/21 14:46
  */
 
-namespace App\Domain\Stakeholder\Model;
+namespace AE\Stakeholder\Domain;
 
 
 class User

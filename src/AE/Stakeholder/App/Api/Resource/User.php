@@ -3,11 +3,11 @@
  * Created by dgoosens on 26/01/21 15:37
  */
 
-namespace App\Domain\Stakeholder\Api\Resource;
+namespace AE\Stakeholder\Api\Resource;
 
 use ApiPlatform\Core\Annotation\ApiResource;
 use Symfony\Component\Validator\Constraints as Assert;
-use App\Domain\Stakeholder\Api\Endpoint\PostUser;
+use AE\Stakeholder\Api\Endpoint\PostUser;
 
 /**
  * @ApiResource(
