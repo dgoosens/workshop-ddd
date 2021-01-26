@@ -17,3 +17,9 @@ services:
 #   App\Controller\:
 #        resource: '../src/Controller/'
 #        tags: ['controller.service_arguments']
+
+    App\Domain\Stakeholder\Api\:
+        resource: '../src/Domain/Stakeholder/Api/'
+    App\Domain\Stakeholder\Api\Endpoint\:
+        resource: '../src/Domain/Stakeholder/Api/Endpoint/'
+        tags: ['controller.service_arguments']
