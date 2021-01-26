@@ -3,7 +3,7 @@
  * Created by dgoosens on 26/01/21 14:47
  */
 
-namespace AE\Stakeholder\Model;
+namespace AE\Stakeholder\Domain;
 
 
 class UserId

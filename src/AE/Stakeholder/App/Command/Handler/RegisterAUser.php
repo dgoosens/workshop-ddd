@@ -3,7 +3,7 @@
  * Created by dgoosens on 26/01/21 14:53
  */
 
-namespace AE\Stakeholder\Command\Handler;
+namespace AE\Stakeholder\App\Command\Handler;
 
 
 class RegisterAUser

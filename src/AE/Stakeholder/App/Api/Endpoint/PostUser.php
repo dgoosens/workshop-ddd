@@ -3,10 +3,10 @@
  * Created by dgoosens on 26/01/21 16:27
  */
 
-namespace AE\Stakeholder\Api\Endpoint;
+namespace AE\Stakeholder\App\Api\Endpoint;
 
 
-use AE\Stakeholder\Api\Resource\User;
+use AE\Stakeholder\App\Api\Resource\User;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class PostUser extends AbstractController
