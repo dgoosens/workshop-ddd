@@ -1,0 +1,17 @@
+parameters:
+    bounded_context_root_path: '%kernel.project_dir%/src/AE/Stakeholder'
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    AE\Stakeholder\:
+        resource: '../../../AE/Stakeholder/'
+        exclude:
+            - '../../../AE/Stakeholder/Domain/'
+            - '../../../AE/Stakeholder/Infra/'
+
+    AE\Stakeholder\App\Api\Endpoint\:
+        resource: '../../../AE/Stakeholder/App/Api/Endpoint/'
+        tags: [ 'controller.service_arguments' ]
