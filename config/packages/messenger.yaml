@@ -3,12 +3,14 @@ framework:
         failure_transport: failed
 
         transports:
-            command:
-                dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
+            query: 'sync://'        # transport synchrone
+            command:                # transport Asynchrone
+                dsn: '%env(MESSENGER_TRANSPORT_DSN)%/command'
                 retry_strategy:
                     max_retries: 3
-            failed: '%env(MESSENGER_TRANSPORT_DSN)%'
+            failed: '%env(MESSENGER_TRANSPORT_DSN)%/failed'
 
         routing:
+            App\Domain\Stakeholder\Command\Message\RegisterAUserMessage: command
             # Route your messages to the transports
             # 'App\Message\YourMessage': async
