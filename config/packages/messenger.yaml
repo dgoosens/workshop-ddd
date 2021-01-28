@@ -12,5 +12,6 @@ framework:
 
         routing:
             App\Domain\Stakeholder\Command\Message\RegisterAUserMessage: command
+            App\Domain\Stakeholder\Query\Message\FetchUserMessage: query
             # Route your messages to the transports
             # 'App\Message\YourMessage': async
